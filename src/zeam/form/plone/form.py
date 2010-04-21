@@ -85,8 +85,13 @@ class PloneForm(PloneFormData, Acquisition.Explicit):
 
 
 class EditForm(PloneForm, base.Form):
+    """Generic Plone Edit Form
+    """
     grok.baseclass()
+    grok.name('edit')
+    grok.require('cmf.ModifyPortalContent')
 
+    label = _(u"Edit")
     ignoreContent = False
     actions = base.Actions(
         EditAction(_(u"Save")),

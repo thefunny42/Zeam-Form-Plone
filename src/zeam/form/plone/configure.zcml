@@ -2,13 +2,18 @@
    xmlns="http://namespaces.zope.org/zope"
    xmlns:five="http://namespaces.zope.org/five"
    xmlns:grok="http://namespaces.zope.org/grok"
+   xmlns:i18n="http://namespaces.zope.org/i18n"
    i18n_domain="hydrasite">
 
   <include package="zeam.form.base" />
   <include package="zeam.form.ztk" />
   <include package="five.grok" />
+  <include package="zope.i18n" file="meta.zcml" />
+
+  <i18n:registerTranslations directory="i18n" />
 
   <grok:grok package=".meta" />
   <grok:grok package=".form" />
+  <grok:grok package=".widgets" />
 
 </configure>
