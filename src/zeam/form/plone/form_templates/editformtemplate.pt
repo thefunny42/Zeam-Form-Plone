@@ -1,0 +1,70 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="hydrasite">
+
+  <div metal:fill-slot="main">
+
+    <div tal:replace="structure provider:plone.abovecontenttitle" />
+
+    <h1 class="documentFirstHeading"
+        tal:content="context/Title" />
+
+    <div tal:replace="structure provider:plone.belowcontenttitle" />
+    <div class="portalMessage"
+         tal:condition="view/status" tal:content="view/status">
+    </div>
+
+    <form action="." method="post" tal:attributes="action request/getURL"
+          class="enableUnloadProtection zeam-form">
+
+      <h2 tal:condition="view/label" tal:content="view/label">
+        Form title
+      </h2>
+
+      <p tal:condition="view/description" tal:content="view/description">
+        Form description
+      </p>
+
+      <div class="fields"
+           tal:condition="view/fieldWidgets">
+        <div class="field" tal:repeat="widget view/fieldWidgets">
+          <label class="field-label" for="#"
+                 tal:attributes="for widget/htmlId"
+                 tal:content="widget/title">
+            Label
+          </label>
+          <span class="field-required"
+                tal:condition="widget/required">*</span>
+          <br />
+          <tal:description tal:condition="widget/description">
+            <span class="field-description"
+                  tal:content="widget/description">
+            </span><br />
+          </tal:description>
+          <tal:error tal:define="error widget/error"
+                     tal:condition="error">
+            <span class="field-error"
+                  tal:content="error/title">
+              Error
+            </span>
+            <br />
+          </tal:error>
+          <tal:widget tal:content="structure widget/render" />
+        </div>
+      </div>
+
+      <div class="actions">
+        <span class="action" tal:repeat="widget view/actionWidgets">
+          <tal:widget tal:content="structure widget/render" />
+        </span>
+      </div>
+
+    </form>
+
+    <div tal:replace="structure provider:plone.belowcontentbody" />
+
+  </div>
+
+</html>
+
+

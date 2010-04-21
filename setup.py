@@ -28,6 +28,8 @@ setup(name='zeam.form.plone',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
+          'Products.statusmessages',
+          'five.grok',
           'setuptools',
           'zeam.form.base',
           'zeam.form.ztk',
