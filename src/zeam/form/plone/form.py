@@ -84,7 +84,13 @@ class PloneForm(PloneFormData, Acquisition.Explicit):
         return super(PloneForm, self).__call__()
 
 
-class EditForm(PloneForm, base.Form):
+class Form(PloneForm, base.Form):
+    """Generic Plone Form
+    """
+    grok.baseclass()
+
+
+class EditForm(Form):
     """Generic Plone Edit Form
     """
     grok.baseclass()
@@ -98,5 +104,5 @@ class EditForm(PloneForm, base.Form):
         CancelAction(_(u"Cancel")))
 
 
-class EditFormTemplate(pt.PageTemplate):
-    pt.view(EditForm)
+class FormTemplate(pt.PageTemplate):
+    pt.view(Form)

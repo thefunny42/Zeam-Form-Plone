@@ -1,0 +1,28 @@
+<div class="field-plone-multi-select" id="#"
+     tal:define="widgetId widget/htmlId"
+     tal:attributes="id widgetId">
+  <select id="#" name="" multiple="multiple" size="5" class="field-plone-select"
+          tal:attributes="id string:${widgetId}-selected;
+                          name widget/identifier">
+    <tal:option tal:repeat="option widget/renderableChoice">
+      <option selected="selected"
+              tal:condition="option/checked"
+              tal:attributes="value option/token"
+              tal:content="option/title">Option</option>
+    </tal:option>
+  </select>
+  <button class="allowMultiSubmit" id="#"
+          tal:attributes="id string:${widgetId}-add">&lt;</button>
+  <button class="allowMultiSubmit" id="#"
+          tal:attributes="id string:${widgetId}-remove">&gt;</button>
+  <select id="#" multiple="multiple" size="5" class="field-plone-select"
+          tal:attributes="id string:${widgetId}-available;">
+    <tal:option tal:repeat="option widget/renderableChoice">
+      <option tal:condition="not:option/checked"
+              tal:attributes="value option/token"
+              tal:content="option/title">Option</option>
+    </tal:option>
+  </select>
+  <input type="hidden" name="#" value="1"
+         tal:attributes="name string:${widget/identifier}.present" />
+</div>

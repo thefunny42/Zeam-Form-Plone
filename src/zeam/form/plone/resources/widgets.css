@@ -1,0 +1,47 @@
+.zeam-form .multi-actions input,
+.zeam-form .step-actions input,
+.zeam-form .actions input {
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: 9px 1px;
+  background-color: transparent;
+  background-image: url(../linkTransparent.gif);
+  color: #000000;
+  cursor: pointer;
+  font-size: 85%;
+  padding: 1px 1px 1px 15px;
+  margin-top: 2px;
+  text-transform: lowercase;
+  border: 1px solid #8cacbb;
+}
+
+.zeam-form .field-required  {
+  background:url(../required.gif) no-repeat scroll left center transparent;
+  color: #FFFFFF;
+  padding:0 0 0 8px;
+}
+
+.zeam-form .field-description  {
+  color: #76797C;
+  font-size: 90%;
+  margin: 0 0 0.2em;
+}
+
+.zeam-form .form-error,
+.zeam-form .field-error {
+  display: block;
+  color: #000000;
+  background-color: #FFDDCC;
+  border: 1px solid #DD0000;
+  padding: 0.5em;
+  width: 95%;
+}
+
+.zeam-form .field-plone-select {
+  width: 45%;
+}
+
+.zeam-form table tr {
+  vertical-align: top;
+}
+

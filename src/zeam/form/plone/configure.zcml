@@ -3,6 +3,7 @@
    xmlns:five="http://namespaces.zope.org/five"
    xmlns:grok="http://namespaces.zope.org/grok"
    xmlns:i18n="http://namespaces.zope.org/i18n"
+   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
    i18n_domain="hydrasite">
 
   <include package="zeam.form.base" />
@@ -15,5 +16,13 @@
   <grok:grok package=".meta" />
   <grok:grok package=".form" />
   <grok:grok package=".widgets" />
+
+  <genericsetup:registerProfile
+     name="default"
+     title="Zeam Form"
+     directory="profiles/default"
+     description="CSS and JS for Zeam Form"
+     provides="Products.GenericSetup.interfaces.EXTENSION"
+     />
 
 </configure>
