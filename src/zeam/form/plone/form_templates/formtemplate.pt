@@ -1,6 +1,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
       metal:use-macro="here/main_template/macros/master"
-      i18n:domain="hydrasite">
+      i18n:domain="zeam-form-plone">
+
+  <div metal:fill-slot="top_slot">
+    <tal:border tal:condition="not:view/plonePageBorder">
+      <tal:disable
+         tal:define="dummy python:request.set('disable_border', 1)" />
+    </tal:border>
+  </div>
 
   <div metal:fill-slot="main">
 
@@ -24,6 +31,12 @@
       <p tal:condition="view/description" tal:content="view/description">
         Form description
       </p>
+
+      <div class="form-error"
+           tal:condition="view/formError"
+           tal:content="view/formError/title">
+        Form error
+      </div>
 
       <div class="fields"
            tal:condition="view/fieldWidgets">
