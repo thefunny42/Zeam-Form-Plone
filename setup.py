@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.0'
+version = '1.0b1'
 
 
 setup(name='zeam.form.plone',
@@ -30,8 +30,13 @@ setup(name='zeam.form.plone',
       install_requires=[
           'Products.statusmessages',
           'five.grok',
+          'martian',
+          'megrok.pagetemplate',
           'setuptools',
           'zeam.form.base',
           'zeam.form.ztk',
+          'zope.i18n',
+          'zope.i18nmessageid',
+          'zope.interface',
           ],
       )
