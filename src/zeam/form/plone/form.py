@@ -77,6 +77,9 @@ class PloneForm(PloneFormData, Acquisition.Explicit):
         self.__name__ = self.__view_name__
 
     def __call__(self):
+        # Set request.method
+        self.request.other['method'] = self.request.environ['REQUEST_METHOD']
+        # Set local
         if not hasattr(self.request, 'locale'):
             # This is not pretty, but no choice.
             self.request.locale = find_locale(self.request)

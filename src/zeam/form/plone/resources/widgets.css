@@ -15,13 +15,13 @@
   border: 1px solid #8cacbb;
 }
 
-.zeam-form .field-required  {
+.zeam-form span.field-required  {
   background:url(../required.gif) no-repeat scroll left center transparent;
   color: #FFFFFF;
   padding:0 0 0 8px;
 }
 
-.zeam-form .field-description  {
+.zeam-form span.field-description  {
   color: #76797C;
   font-size: 90%;
   margin: 0 0 0.2em;
