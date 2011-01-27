@@ -11,10 +11,10 @@
               tal:content="option/title">Option</option>
     </tal:option>
   </select>
-  <button class="allowMultiSubmit" id="#"
-          tal:attributes="id string:${widgetId}-add">&lt;</button>
-  <button class="allowMultiSubmit" id="#"
-          tal:attributes="id string:${widgetId}-remove">&gt;</button>
+  <button class="field-plone-multi-select-add allowMultiSubmit" id="#"
+          tal:attributes="id string:${widgetId}-add"></button>
+  <button class="field-plone-multi-select-remove allowMultiSubmit" id="#"
+          tal:attributes="id string:${widgetId}-remove"></button>
   <select id="#" multiple="multiple" size="5" class="field-plone-select"
           tal:attributes="id string:${widgetId}-available;">
     <tal:option tal:repeat="option widget/renderableChoice">

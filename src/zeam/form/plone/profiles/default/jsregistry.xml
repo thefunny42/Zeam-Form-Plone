@@ -3,5 +3,14 @@
 
   <javascript cacheable="True" compression="safe" cookable="True"
               enabled="on" expression="" inline="False"
+              id="++resource++zeam.form.plone.resources/json-template.js" />
+
+  <javascript cacheable="True" compression="safe" cookable="True"
+              enabled="on" expression="" inline="False"
+              id="++resource++zeam.form.ztk.widgets/listgeneric.js" />
+
+  <javascript cacheable="True" compression="safe" cookable="True"
+              enabled="on" expression="" inline="False"
               id="++resource++zeam.form.plone.resources/widgets.js" />
+
 </object>

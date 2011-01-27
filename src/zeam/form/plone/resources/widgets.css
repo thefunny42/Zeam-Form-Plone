@@ -46,3 +46,46 @@
   vertical-align: top;
 }
 
+.zeam-form button.field-list-move-up {
+  background-image: url(arrow_up.png);
+  background-color: transparent;
+  height: 16px;
+  width: 16px;
+  border: 0px;
+}
+
+.zeam-form div.field-list-lines :first-child button.field-list-move-up  {
+  display: none;
+}
+
+.zeam-form button.field-list-move-down {
+  background-image: url(arrow_down.png);
+  background-color: transparent;
+  height: 16px;
+  width: 16px;
+  border: 0px;
+}
+
+.zeam-form div.field-list-lines :first-child button.field-list-move-down {
+ margin-left: 20px;
+}
+
+.zeam-form div.field-list-lines :last-child button.field-list-move-down {
+ display: none;
+}
+
+.zeam-form button.field-plone-multi-select-add {
+  background-image: url(arrow_left.png);
+  background-color: transparent;
+  height: 16px;
+  width: 16px;
+  border: 0px;
+}
+
+.zeam-form button.field-plone-multi-select-remove {
+  background-image: url(arrow_right.png);
+  background-color: transparent;
+  height: 16px;
+  width: 16px;
+  border: 0px;
+}
