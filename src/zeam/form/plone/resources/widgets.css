@@ -46,16 +46,19 @@
   vertical-align: top;
 }
 
+/* CSS for list widget */
+
+.zeam-form div.field-list-line {
+  clear: both;
+}
+
 .zeam-form button.field-list-move-up {
   background-image: url(arrow_up.png);
   background-color: transparent;
   height: 16px;
   width: 16px;
   border: 0px;
-}
-
-.zeam-form div.field-list-lines :first-child button.field-list-move-up  {
-  display: none;
+  float: left;
 }
 
 .zeam-form button.field-list-move-down {
@@ -64,14 +67,12 @@
   height: 16px;
   width: 16px;
   border: 0px;
+  float: right;
 }
 
-.zeam-form div.field-list-lines :first-child button.field-list-move-down {
- margin-left: 20px;
-}
-
-.zeam-form div.field-list-lines :last-child button.field-list-move-down {
- display: none;
+.zeam-form div.field-list-lines .line-order {
+  float: left;
+  width: 32px;
 }
 
 .zeam-form button.field-plone-multi-select-add {
