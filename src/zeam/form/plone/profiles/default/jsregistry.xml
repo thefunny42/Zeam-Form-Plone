@@ -7,7 +7,7 @@
 
   <javascript cacheable="True" compression="safe" cookable="True"
               enabled="on" expression="" inline="False"
-              id="++resource++zeam.form.ztk.widgets/listgeneric.js" />
+              id="++resource++zeam.form.ztk.widgets/collection.js" />
 
   <javascript cacheable="True" compression="safe" cookable="True"
               enabled="on" expression="" inline="False"

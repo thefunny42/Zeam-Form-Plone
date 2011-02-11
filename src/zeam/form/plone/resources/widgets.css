@@ -48,12 +48,12 @@
 
 /* CSS for list widget */
 
-.zeam-form div.field-list-line {
+.zeam-form div.field-collection-line {
   clear: both;
 }
 
-.zeam-form button.field-list-move-up {
-  background-image: url(arrow_up.png);
+.zeam-form button.field-collection-move-up {
+  background-image: url(++resource++zeam.form.plone.resources/arrow_up.png);
   background-color: transparent;
   height: 16px;
   width: 16px;
@@ -61,8 +61,8 @@
   float: left;
 }
 
-.zeam-form button.field-list-move-down {
-  background-image: url(arrow_down.png);
+.zeam-form button.field-collection-move-down {
+  background-image: url(++resource++zeam.form.plone.resources/arrow_down.png);
   background-color: transparent;
   height: 16px;
   width: 16px;
@@ -70,13 +70,28 @@
   float: right;
 }
 
-.zeam-form div.field-list-lines .line-order {
+.zeam-form input.field-collection-line-selector {
+  height: 16px;
+  width: 16px;
+  border: 0px;
+  float: right;
+}
+
+.zeam-form .field-collection-lines div.line-actions {
   float: left;
-  width: 32px;
+  width: 50px;
+}
+
+.zeam-form .field-collection-lines td.line-actions {
+  width: 16px;
+}
+
+.zeam-form .field-collection-lines td.ordering-actions {
+  width: 48px;
 }
 
 .zeam-form button.field-plone-multi-select-add {
-  background-image: url(arrow_left.png);
+  background-image: url(++resource++zeam.form.plone.resources/arrow_left.png);
   background-color: transparent;
   height: 16px;
   width: 16px;
@@ -84,7 +99,7 @@
 }
 
 .zeam-form button.field-plone-multi-select-remove {
-  background-image: url(arrow_right.png);
+  background-image: url(++resource++zeam.form.plone.resources/arrow_right.png);
   background-color: transparent;
   height: 16px;
   width: 16px;

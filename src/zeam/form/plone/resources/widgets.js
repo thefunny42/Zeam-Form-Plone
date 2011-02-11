@@ -43,10 +43,10 @@
         });
 
         // On list widget, add class allowMultiSubmit
-        $('.zeam-form input.field-list-add-line').addClass('allowMultiSubmit');
-        $('.zeam-form input.field-list-remove-line').addClass('allowMultiSubmit');
-        $('.zeam-form button.field-list-move-up').addClass('allowMultiSubmit');
-        $('.zeam-form button.field-list-move-down').addClass('allowMultiSubmit');
+        $('.zeam-form input.field-collection-add-line').addClass('allowMultiSubmit');
+        $('.zeam-form input.field-collection-remove-line').addClass('allowMultiSubmit');
+        $('.zeam-form button.field-collection-move-up').addClass('allowMultiSubmit');
+        $('.zeam-form button.field-collection-move-down').addClass('allowMultiSubmit');
     });
 
 })(jQuery);

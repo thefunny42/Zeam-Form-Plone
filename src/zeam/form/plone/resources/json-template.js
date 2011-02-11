@@ -170,7 +170,7 @@ var PrefixRegistry = function(functions) {
             args = user_str.split(splitchar).slice(1);
           }
           return [func, args];
-        } 
+        }
       }
       return [null, null];  // No formatter
     }
@@ -248,7 +248,7 @@ function _ScopedContext(context, undefined_str) {
           name: 'UndefinedVariable', message: name + ' is not defined'
         };
       } else {
-        return undefined_str;
+        return undefined_str(name);
       }
     },
 
@@ -464,7 +464,7 @@ function _DoRepeatedSection(args, context, callback) {
     // Execute the statements in the block for every item in the list.
     // Execute the alternate block on every iteration except the last.  Each
     // item could be an atom (string, integer, etc.) or a dictionary.
-    
+
     var last_index = items.length - 1;
     var statements = block.Statements();
     var alt_statements = block.Statements('alternate');
