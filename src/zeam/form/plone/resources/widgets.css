@@ -90,6 +90,10 @@
   width: 48px;
 }
 
+.zeam-form .field-collection .multi-actions {
+  clear: both;
+}
+
 .zeam-form button.field-plone-multi-select-add {
   background-image: url(++resource++zeam.form.plone.resources/arrow_left.png);
   background-color: transparent;
