@@ -1,10 +1,12 @@
 Changes
 =======
 
-1.0 (unreleased)
+1.0 (2011/08/11)
 ----------------
 
-* ...
+* Support zeam.form.ztk 1.1.
+
+* Add CSS and JS for new collection widgets. 
 
 1.0b1 (2010/05/03)
 ------------------
