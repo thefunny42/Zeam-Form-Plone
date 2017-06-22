@@ -3,7 +3,7 @@ zeam.form.plone
 ===============
 
 ``zeam.form.plone`` provides support for `zeam.form.base`_ into Plone
-3.x:
+3, 4 and 5:
 
 - make forms and security work in Zope 2,
 
