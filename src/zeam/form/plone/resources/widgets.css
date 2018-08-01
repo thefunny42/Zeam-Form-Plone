@@ -53,21 +53,25 @@
 }
 
 .zeam-form button.field-collection-move-up {
-  background-image: url(++resource++zeam.form.plone.resources/arrow_up.png);
-  background-color: transparent;
-  height: 16px;
-  width: 16px;
-  border: 0px;
-  float: left;
-}
-
-.zeam-form button.field-collection-move-down {
-  background-image: url(++resource++zeam.form.plone.resources/arrow_down.png);
+  background-image: url("++resource++zeam_form_plone_resources/arrow_up.png");
   background-color: transparent;
   height: 16px;
   width: 16px;
   border: 0px;
   float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.zeam-form button.field-collection-move-down {
+  background-image: url("++resource++zeam_form_plone_resources/arrow_down.png");
+  background-color: transparent;
+  height: 16px;
+  width: 16px;
+  border: 0px;
+  float: right;
+  margin: 0;
+  padding: 0;
 }
 
 .zeam-form input.field-collection-line-selector {
@@ -95,7 +99,7 @@
 }
 
 .zeam-form button.field-plone-multi-select-add {
-  background-image: url(++resource++zeam.form.plone.resources/arrow_left.png);
+  background-image: url("++resource++zeam_form_plone_resources/arrow_left.png");
   background-color: transparent;
   height: 16px;
   width: 16px;
@@ -103,7 +107,7 @@
 }
 
 .zeam-form button.field-plone-multi-select-remove {
-  background-image: url(++resource++zeam.form.plone.resources/arrow_right.png);
+  background-image: url("++resource++zeam_form_plone_resources/arrow_right.png");
   background-color: transparent;
   height: 16px;
   width: 16px;

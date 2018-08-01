@@ -38,5 +38,6 @@ setup(name='zeam.form.plone',
           'zope.i18n',
           'zope.i18nmessageid',
           'zope.interface',
+          'zope.globalrequest',
           ],
       )

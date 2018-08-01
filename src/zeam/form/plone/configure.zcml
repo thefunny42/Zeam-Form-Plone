@@ -4,7 +4,7 @@
    xmlns:grok="http://namespaces.zope.org/grok"
    xmlns:i18n="http://namespaces.zope.org/i18n"
    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-   i18n_domain="hydrasite">
+   i18n_domain="zeam.form.plone">
 
   <include package="zeam.form.base" />
   <include package="zeam.form.ztk" />
